@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "categories": {
+    "length": {
+      "kind": "ratio",
+      "title": "Length",
+      "base": "m",
+      "units": {
+        "mm": { "factor": 0.001, "aliases": ["millimeter", "millimeters", "millimetre", "millimetres"] },
+        "cm": { "factor": 0.01,  "aliases": ["centimeter", "centimeters", "centimetre", "centimetres"] },
+        "m":  { "factor": 1.0,   "aliases": ["meter", "meters", "metre", "metres"] },
+        "km": { "factor": 1000.0,"aliases": ["kilometer", "kilometers", "kilometre", "kilometres"] },
+        "in": { "factor": 0.0254,"aliases": ["inch", "inches"] },
+        "ft": { "factor": 0.3048,"aliases": ["foot", "feet"] },
+        "yd": { "factor": 0.9144,"aliases": ["yard", "yards"] },
+        "mi": { "factor": 1609.344, "aliases": ["mile", "miles"] }
+      }
+    },
+    "mass": {
+      "kind": "ratio",
+      "title": "Mass",
+      "base": "kg",
+      "units": {
+        "mg": { "factor": 0.000001, "aliases": ["milligram", "milligrams"] },
+        "g":  { "factor": 0.001,    "aliases": ["gram", "grams"] },
+        "kg": { "factor": 1.0,      "aliases": ["kilogram", "kilograms"] },
+        "tonne": { "factor": 1000.0, "aliases": ["metric ton", "metric tonne", "t"] },
+        "oz": { "factor": 0.028349523125, "aliases": ["ounce", "ounces"] },
+        "lb": { "factor": 0.45359237, "aliases": ["pound", "pounds", "lbs"] }
+      }
+    },
+    "temperature": {
+      "kind": "affine",
+      "title": "Temperature",
+      "units": {
+        "C": { "aliases": ["c", "celsius", "centigrade", "deg c", "degree celsius", "degrees celsius"] },
+        "F": { "aliases": ["f", "fahrenheit", "deg f", "degree fahrenheit", "degrees fahrenheit"] },
+        "K": { "aliases": ["k", "kelvin"] }
+      },
+      "notes": "Temperature uses special formulas, not simple ratios. This server supports C, F, K."
+    }
+  }
+}
